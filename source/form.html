@@ -9,7 +9,6 @@
   <body class="page__body">
     <header class="header-main">
       <div class="container">
-        <h1 class="header-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <nav class="header-main__navigation navigation">
           <a class="navigation__logo-link logo-link" href="index.html">
             <svg class="navigation__logo logo" width="74" height="23" viewBox="0 0 74 23" fill="none">
@@ -39,13 +38,18 @@
           </button>
         </nav>
       </div>
+      <section class="main-title">
+        <div class="container">
+          <h1 class="main-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </section>
     </header>
     <main class="form-index">
       <section class="questionnaire">
         <h2 class="visually-hidden">Форма заявки на участие в конкурсе.</h2>
         <div class="container">
           <div class="questionnaire__intro intro">
-            <p class="questionnaire__promo">Поделитесь своей историей и получите
+            <p class="intro__promo">Поделитесь своей историей и получите
               шанс выиграть ценный приз — 1000
               миль на вашу бонусную карту!</p>
           </div>
@@ -54,60 +58,48 @@
               <legend class="form__title visually-hidden">ФИО участника.</legend>
               <p class="form__person-data person-data">
                 <label class="person-data__name" for="surname">Фамилия:</label>
-                <input class="person-data__argument" type="text" name="surname" id="surname" value="Укажите фамилию *">
+                <input class="person-data__input" type="text" name="surname" id="surname" value="Укажите фамилию *">
               </p>
               <p class="form__person-data person-data">
                 <label class="person-data__name" for="name">Имя:</label>
-                <input class="person-data__argument" type="text" name="name" id="name" value="Введите ваше имя *">
+                <input class="person-data__input" type="text" name="name" id="name" value="Введите ваше имя *">
               </p>
               <p class="form__person-data person-data">
                 <label class="person-data__name" for="second-name">Отчество:</label>
-                <input class="person-data__argument" type="text" name="second-name" id="second-name" value="Ну и отчество тоже">
+                <input class="person-data__input" type="text" name="second-name" id="second-name" value="Ну и отчество тоже">
               </p>
             </fieldset>
             <fieldset class="form__group">
               <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list control-list">
                 <li class="control-list__item">
-                  <label class="control-list__control" for="selfi">
+                  <label class="control-list__control" for="selfi">Сделал селфи с акулой
                     <input class="control-list__check visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
-                    <span class="control-list__control-mark"></span>
-                    <span class="control-list__control-name">Сделал селфи с акулой</span>
                   </label>
                 </li>
                 <li class="control-list__item">
-                  <label class="control-list__control" for="fire">
+                  <label class="control-list__control" for="fire">Обгорел на пляже
                     <input class="control-list__check visually-hidden" type="checkbox" name="fire" id="fire" checked>
-                    <span class="control-list__control-mark"></span>
-                    <span class="control-list__control-name">Обгорел на пляже</span>
                   </label>
                 </li>
                 <li class="control-list__item">
-                  <label class="control-list__control" for="see">
+                  <label class="control-list__control" for="see">Видел Чака Норриса
                     <input class="control-list__check visually-hidden" type="checkbox" name="see" id="see">
-                    <span class="control-list__control-mark"></span>
-                    <span class="control-list__control-name">Видел Чака Норриса</span>
                   </label>
                 </li>
                 <li class="control-list__item">
-                  <label class="control-list__control" for="buy">
+                  <label class="control-list__control" for="buy">Накупил сувениров
                     <input class="control-list__check visually-hidden" type="checkbox" name="buy" id="buy">
-                    <span class="control-list__control-mark"></span>
-                    <span class="control-list__control-name">Накупил сувениров</span>
                   </label>
                 </li>
                 <li class="control-list__item">
-                  <label class="control-list__control" for="save">
+                  <label class="control-list__control" for="save">Удержал башню
                     <input class="control-list__check visually-hidden" type="checkbox" name="save" id="save" checked>
-                    <span class="control-list__control-mark"></span>
-                    <span class="control-list__control-name">Удержал башню</span>
                   </label>
                 </li>
                 <li class="control-list__item">
-                  <label class="control-list__control" for="destroyed">
+                  <label class="control-list__control" for="destroyed">Разгромил отель
                     <input class="control-list__check visually-hidden" type="checkbox" name="destroyed" id="destroyed">
-                    <span class="control-list__control-mark"></span>
-                    <span class="control-list__control-name">Разгромил отель</span>
                   </label>
                 </li>
               </ul>
@@ -116,11 +108,11 @@
               <legend class="form__title visually-hidden">Способы связи.</legend>
               <p class="form__person-data person-data">
                 <label class="person-data__name" for="phone">Номер телефона</label>
-                <input class="person-data__argument" type="tel" name="phone" id="phone" value="Номер, пожалуйста">
+                <input class="person-data__input" type="tel" name="phone" id="phone" value="Номер, пожалуйста">
               </p>
               <p class="form__person-data person-data">
                 <label class="person-data__name" for="mail">Адрес почты</label>
-                <input class="person-data__argument" type="email" name="mail" id="mail" value="Введите почту *">
+                <input class="person-data__input" type="email" name="mail" id="mail" value="Введите почту *">
               </p>
             </fieldset>
             <fieldset class="form__group">
