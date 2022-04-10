@@ -1,0 +1,53 @@
+.buttom-element() {
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+// .toggle {
+//   .buttom-element();
+//   position: relative;
+//   margin: 0;
+//   padding: 0;
+
+//   &::before {
+//     .buttom-element();
+//     content: "";
+//     position: absolute;
+//     top: -10px;
+//     left: 0;
+//   }
+
+//   &::after {
+//     .buttom-element();
+//     content: "";
+//     position: absolute;
+//     bottom: -10px;
+//     left: 0;
+//   }
+// }
+
+.toggle--close {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  &::before {
+    .buttom-element();
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    .buttom-element();
+    content: "";
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+}

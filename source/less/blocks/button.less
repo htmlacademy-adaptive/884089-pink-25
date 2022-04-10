@@ -1,0 +1,47 @@
+.button {
+  .font(700, 18px, 18px, #ffffff);
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  width: 280px;
+  height: 55px;
+
+  &:active {
+    color: fade(#ffffff, 30%);
+  }
+
+  &--primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--acept {
+    color: @second-color;
+    border-color: @second-color;
+  }
+
+  &--cancel {
+    opacity: 0.1;
+    border: 3px solid @main-color;
+    color: @main-color;
+  }
+}
+
+.button--acept:active {
+  background-color: @second-color;
+}
+
+.button--acept:hover {
+  background-color: @second-color;
+  color: #ffffff;
+}
+
+.button--cancel:hover {
+  opacity: 0.3;
+}
+
+.button--cancel:active {
+  opacity: 0.3;
+  background-color: @main-color;
+}
