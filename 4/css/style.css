@@ -442,30 +442,6 @@
   color: #d22856;
   text-transform: uppercase;
 }
-.person-data__name {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  font-family: "Opens Sans", sans-serif;
-  color: #d22856;
-  text-transform: uppercase;
-}
-.person-data__input {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  font-family: "Opens Sans", sans-serif;
-  color: #283645;
-  padding: 20px 23px;
-  border: 2px solid #e5e5e5;
-  border-radius: 1px;
-}
-.person-data__input:hover {
-  border-color: #283645;
-}
-.person-data__input:active {
-  border-color: #d22856;
-}
 .form__textarea {
   font-weight: 400;
   font-size: 18px;
@@ -635,5 +611,41 @@
   line-height: 24px;
   font-family: "Opens Sans", sans-serif;
   color: #283645;
+}
+.list-toggles__toggle {
+  border-radius: 50%;
+  border: none;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  background-color: rgba(40, 54, 69, 0.3);
+}
+.list-toggles__toggle--active {
+  border: 3px solid #283645;
+  background-color: #ffffff;
+}
+.person-data__name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Opens Sans", sans-serif;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.person-data__input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Opens Sans", sans-serif;
+  color: #283645;
+  padding: 20px 23px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+.person-data__input:hover {
+  border-color: #283645;
+}
+.person-data__input:active {
+  border-color: #d22856;
 }
 /*# sourceMappingURL=style.css.map */
