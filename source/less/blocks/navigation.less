@@ -1,0 +1,26 @@
+@bg-color: fade(#000000, 30%);
+
+.navigation {
+  background-color: @bg-color;
+
+  .navigation__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+
+.navigation__link {
+  .font(700, 18px, 32px, #ffffff);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: fade(#d22856, 30%);
+  }
+}
