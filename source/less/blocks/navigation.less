@@ -1,20 +1,47 @@
-@bg-color: fade(#000000, 30%);
-
 .navigation {
-  background-color: @bg-color;
+  background-color: fade(#000000, 30%);
+  z-index: 2;
+
+  // &--open {
+  //   background-color: @main-color;
+  // }
 
   .navigation__list {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    margin-inline-start: auto;
+    display: flex;
+    align-items: center;
   }
 }
 
+// .navigation__toggle {
+//   align-self: center;
+// }
+
+.navigation__item {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+// .navigation__item:not(:last-of-type) {
+//   margin-inline-end: 50px;
+// }
+
 .navigation__link {
-  .font(700, 18px, 32px, #ffffff);
+  .font(400, 18px, 42px, #ffffff);
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
+  padding: 43px;
 
   &:hover {
     color: #d22856;

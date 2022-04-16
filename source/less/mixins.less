@@ -1,6 +1,3 @@
-@main-color: #283645;
-@second-color: #d22856;
-
 .font(@font-weight, @font-size, @line-height, @color) {
   font-weight: @font-weight;
   font-size: @font-size;
@@ -9,15 +6,30 @@
   color: @color;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.button-menu() {
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    width: 50px;
+    height: 2px;
+    background-color: #ffffff;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+
+  &::after {
+    width: 50px;
+    height: 2px;
+    background-color: #ffffff;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
 }

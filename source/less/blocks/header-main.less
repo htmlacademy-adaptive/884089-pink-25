@@ -1,8 +1,44 @@
 .header-main {
-  background-color: rgba(29, 38, 49, 1);
-  background-image: url("../img/header/back-mobile.png");
+  margin: 0 auto;
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  object-fit: contain;
+  background-position-y: 176px, top;
+  background-color: #283645;
+  width: @mobile-width;
+  background-image: url("../img/phone-hand.png"), url("../img/header/back-mobile.png");
+  min-height: 462px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    background-image: url("../img/phone-hand@tablet.png"), url("../img/header/back-tablet.png");
+    min-height: 729px;
+    background-position: bottom;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    background-image: url("../img/phone-hand@desktop.png"), url("../img/header/back-desktop.png");
+    min-height: 853px;
+    background-position: bottom;
+  }
+}
+
+.header-main__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 280px;
+  min-height: 66px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    display: flex;
+    align-items: center;
+    min-height: 110px;
+  }
 }
