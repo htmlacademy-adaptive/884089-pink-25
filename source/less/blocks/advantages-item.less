@@ -1,0 +1,57 @@
+.advantages-item {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.advantages-item__info {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    column-gap: 42px;
+    grid-template-columns: 276px 1fr;
+    background-image: url("../img/advantages/clock@tablet.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+    background-image: url("../img/advantages/clock.svg");
+    min-height: 345px;
+    grid-template-columns: 298px 1fr;
+  }
+}
+
+.advantages-item__title {
+  .font(700, 30px, 36px, #000000);
+  grid-column: 2;
+
+  @media (min-width: @desktop-width) {
+    .font(700, 30px, 30px, #000000);
+  }
+}
+
+.advantages-item__text {
+  .font(400, 14px, 24px, @main-color);
+  grid-column: 2;
+
+  @media (min-width: @desktop-width) {
+    .font(400, 18px, 30px, @main-color);
+  }
+}
+
+.advantages-item__link {
+  .font(400, 14px, 24px, @second-color);
+  grid-column: 2;
+
+  @media (min-width: @desktop-width) {
+    .font(400, 18px, 30px, @second-color);
+  }
+}
