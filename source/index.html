@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-   <header class="header-main">
+  <header class="header-main">
     <nav class="header-main__navigation navigation navigation--open">
       <div class="header-main__container container">
         <a class="navigation__logo-link logo-link" href="index.html">
@@ -124,7 +124,7 @@
     </div>
   </header>
   <main class="index">
-     <section class="advantages">
+    <section class="advantages">
 
       <h2 class="visually-hidden">Преимущества.</h2>
       <section class="promo">
@@ -205,35 +205,59 @@
         </p>
       </div>
     </section>
-  </main>
-  <!--<section class="tariff">
-      <div class="container">
-        <h2 class="visually-hidden">Тарифы.</h2>
-        <table class="tariff__table table-cost">
+
+    <section class="tariff">
+
+      <h2 class="visually-hidden">Тарифы.</h2>
+      <table class="tariff__table table-cost">
+        <tbody class="table-cost__body">
           <tr class="table-cost__item">
             <th class="table-cost__title">
-              Стандарт
+
+            </th>
+            <th class="table-cost__title">
+              База <br>
+              <span class="table-cost__sum">1,99 USD</span>
+            </th>
+            <th class="table-cost__title table-cost__title--active">
+              Стандарт <br>
               <span class="table-cost__sum">3,99 USD</span>
+            </th>
+            <th class="table-cost__title">
+              АНЛИМ <br>
+              <span class="table-cost__sum">9,99 USD</span>
             </th>
           </tr>
           <tr class="table-cost__item">
-            <td class="table-cost__cell">Розовый фильтр</td>
+            <td class="table-cost__cell table-cost__cell--primary">Розовый фильтр</td>
+            <td class="table-cost__cell table-cost__cell--primary">Розовый фильтр</td>
+            <td class="table-cost__cell table-cost__cell--primary">Розовый фильтр</td>
+            <td class="table-cost__cell table-cost__cell--primary">Розовый фильтр</td>
           </tr>
           <tr class="table-cost__item">
+            <td class="table-cost__cell">Смайлики</td>
+            <td class="table-cost__cell">Смайлики</td>
+            <td class="table-cost__cell">Смайлики</td>
             <td class="table-cost__cell">Смайлики</td>
           </tr>
           <tr class="table-cost__item">
             <td class="table-cost__cell">Комментарии</td>
+            <td class="table-cost__cell">Комментарии</td>
+            <td class="table-cost__cell">Комментарии</td>
+            <td class="table-cost__cell">Комментарии</td>
           </tr>
-        </table>
-        <p class="tariff__toggles list-toggles">
-          <button class="list-toggles__toggle" type="button"><span class="visually-hidden">Текущий.</span></button>
-          <button class="list-toggles__toggle list-toggles__toggle--active" type="button"><span
-              class="visually-hidden">Следующий.</span></button>
-          <button class="list-toggles__toggle" type="button"><span class="visually-hidden">Следующий.</span></button>
-        </p>
-      </div>
+        </tbody>
+      </table>
+      <p class="tariff__toggles list-toggles">
+        <button class="list-toggles__toggle" type="button"><span class="visually-hidden">Текущий.</span></button>
+        <button class="list-toggles__toggle list-toggles__toggle--active" type="button"><span
+            class="visually-hidden">Следующий.</span></button>
+        <button class="list-toggles__toggle" type="button"><span class="visually-hidden">Следующий.</span></button>
+      </p>
+
     </section>
+  </main>
+  <!--
     <section class="contacts">
       <div class="container">
         <section class="contacts__promo promo">

@@ -2,4 +2,21 @@
   background-image: url("../img/grey-background.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
+  margin: 0 auto;
+  width: @mobile-width;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.tariff__toggles {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
