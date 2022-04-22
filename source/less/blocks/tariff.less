@@ -1,5 +1,15 @@
 .tariff {
   background-image: url("../img/grey-background.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tariff__toggles {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

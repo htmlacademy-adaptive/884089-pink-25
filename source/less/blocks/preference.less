@@ -2,12 +2,76 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
-  .preference__descriprion {
-    .font(400, 14px, 24px, @main-color);
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 268px 1fr;
+    grid-column-gap: 42px;
+    background-image: url("../img/advantages/phone-hello@tablet.png");
+    background-repeat: no-repeat;
+    background-position: left 0 bottom -80px;
+    min-height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(auto-fill, 252px);
+    justify-content: space-around;
+    background-image: none;
+    min-height: 616px;
+  }
+}
+
+.preference::after {
+  content: url("../img/advantages/phone-hello@mobile.png");
+  margin: 0 auto;
+  margin-bottom: -38px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.preference__item {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
+    grid-column: 2;
+  }
+}
+
+.preference__item::before {
+  @media (min-width: @desktop-width) {
+    content: url("../img/advantages/advantages-1.png");
+    margin-bottom: -52px;
+  }
+}
+
+.preference__wrapper {
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
   }
 }
 
 .preference__title {
   .font(700, 18px, 24px, #000000);
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    .font(700, 30px, 30px, #000000);
+  }
+}
+
+.preference__descriprion {
+  .font(400, 14px, 24px, @main-color);
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    .font(400, 18px, 30px, @main-color);
+  }
 }

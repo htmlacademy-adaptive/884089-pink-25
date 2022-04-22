@@ -1,9 +1,22 @@
-.contacts__callback {
-  .font(300, 24px, 29px, @main-color);
+.contacts {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.contact__definition {
-  .font(700, 18px, 25px, @main-color);
+.contacts__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-around;
+  }
+}
+
+.contacts__callback {
+  .font(300, 24px, 29px, @main-color);
 }
 
 .contact__link {

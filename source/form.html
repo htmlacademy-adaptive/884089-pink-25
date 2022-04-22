@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>HTML Academy: Пинк</title>
     <link rel="icon" href="favicon32x32.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32x32.png">
@@ -35,7 +36,7 @@
             </li>
           </ul>
           <button class="navigation__toggle toggle toggle--close" type="button">
-            <span class="visually-hidden">Закрыть.</span>
+            <span class="visually-hidden">Меню.</span>
           </button>
         </nav>
       </div>
@@ -74,28 +75,46 @@
               <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list control-list">
                 <li class="control-list__item">
-                  <input class="control-list__check visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
-                  <label class="control-list__control" for="selfi">Сделал селфи с акулой</label>
+                  <label class="control-list__control" for="selfi">
+                    <input class="control-list__check visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
+                    <span class="control-list__mark"></span>
+                    <span class="control-list__name">Сделал селфи с акулой</span>
+                  </label>
                 </li>
                 <li class="control-list__item">
-                  <input class="control-list__check visually-hidden" type="checkbox" name="fire" id="fire" checked>
-                  <label class="control-list__control" for="fire">Обгорел на пляже</label>
+                  <label class="control-list__control" for="fire">
+                    <input class="control-list__check visually-hidden" type="checkbox" name="fire" id="fire" checked>
+                    <span class="control-list__mark"></span>
+                    <span class="control-list__name">Обгорел на пляже</span>
+                  </label>
                 </li>
                 <li class="control-list__item">
-                  <input class="control-list__check visually-hidden" type="checkbox" name="see" id="see">
-                  <label class="control-list__control" for="see">Видел Чака Норриса</label>
+                  <label class="control-list__control" for="see">
+                    <input class="control-list__check visually-hidden" type="checkbox" name="see" id="see">
+                    <span class="control-list__mark"></span>
+                    <span class="control-list__name">Видел Чака Норриса</span>
+                  </label>
                 </li>
                 <li class="control-list__item">
-                  <input class="control-list__check visually-hidden" type="checkbox" name="buy" id="buy">
-                  <label class="control-list__control" for="buy">Накупил сувениров</label>
+                  <label class="control-list__control" for="buy">
+                    <input class="control-list__check visually-hidden" type="checkbox" name="buy" id="buy">
+                    <span class="control-list__mark"></span>
+                    <span class="control-list__name">Накупил сувениров</span>
+                  </label>
                 </li>
                 <li class="control-list__item">
-                  <input class="control-list__check visually-hidden" type="checkbox" name="save" id="save" checked>
-                  <label class="control-list__control" for="save">Удержал башню</label>
+                  <label class="control-list__control" for="save">
+                    <input class="control-list__check visually-hidden" type="checkbox" name="save" id="save" checked>
+                    <span class="control-list__mark"></span>
+                    <span class="control-list__name">Удержал башню</span>
+                  </label>
                 </li>
                 <li class="control-list__item">
-                  <input class="control-list__check visually-hidden" type="checkbox" name="destroyed" id="destroyed">
-                  <label class="control-list__control" for="destroyed">Разгромил отель</label>
+                  <label class="control-list__control" for="destroyed">
+                    <input class="control-list__check visually-hidden" type="checkbox" name="destroyed" id="destroyed">
+                    <span class="control-list__mark"></span>
+                    <span class="control-list__name">Разгромил отель</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -114,16 +133,25 @@
               <legend class="form__title">С каким приложением путешествовали?</legend>
               <ul class="form__list control-list">
                 <li class="control-list__item">
-                  <input class="control-list__radio visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
-                  <label class="control-list__control control-list__control--radio" for="ios">Pink для iOS</label>
+                  <label class="control-list__control" for="ios">
+                    <input class="control-list__radio visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
+                    <span class="control-list__mark control-list__mark--radio"></span>
+                    <span class="control-list__name">Pink для iOS</span>
+                  </label>
                 </li>
                 <li class="control-list__item">
-                  <input class="control-list__radio visually-hidden" type="radio" name="platform" value="android" id="android">
-                  <label class="control-list__control control-list__control--radio" for="android">Pink на Android</label>
+                  <label class="control-list__control" for="android">
+                    <input class="control-list__radio visually-hidden" type="radio" name="platform" value="android" id="android">
+                    <span class="control-list__mark control-list__mark--radio"></span>
+                    <span class="control-list__name">Pink на Android</span>
+                  </label>
                 </li>
                 <li class="control-list__item">
-                  <input class="control-list__radio visually-hidden" type="radio" name="platform" value="windows" id="windows">
-                  <label class="control-list__control control-list__control--radio" for="windows">Windows Phone</label>
+                  <label class="control-list__control" for="windows">
+                    <input class="control-list__radio visually-hidden" type="radio" name="platform" value="windows" id="windows">
+                    <span class="control-list__mark control-list__mark--radio"></span>
+                    <span class="control-list__name">Windows Phone</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>

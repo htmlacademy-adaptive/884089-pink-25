@@ -8,13 +8,16 @@
   margin-block-end: 47px;
 }
 
-.control-list__control {
+.control-list__name {
   .font(400, 18px, 30px, @main-color);
+}
+
+.control-list__control {
   position: relative;
   padding-inline-start: 57px;
   cursor: pointer;
 
-  &::before {
+  .control-list__mark {
     position: absolute;
     content: "";
     width: 35px;
@@ -25,41 +28,43 @@
     transform: translateY(-5px);
     background-color: #ffffff;
   }
-}
 
-.control-list__control:hover {
-  &::before {
-    border-color: @main-color;
+  .control-list__mark--radio {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    left: 0;
+    top: -5px;
+  }
+
+  &:hover {
+    .control-list__mark {
+      border-color: @main-color;
+    }
+  }
+
+  &:active {
+    .control-list__mark {
+      border-color: @second-color;
+    }
   }
 }
 
-.control-list__control:active {
-  &::before {
-    border-color: @second-color;
-  }
-}
-
-.control-list__check[type="checkbox"]:checked + .control-list__control::after {
+.control-list__check[type="checkbox"]:checked + .control-list__mark::before {
   position: absolute;
   content: url("../img/tick.svg");
+  left: 7px;
+  top: 50%;
+  transform: translateY(-8px);
+}
+
+.control-list__radio[type="radio"]:checked + .control-list__mark--radio::before {
+  position: absolute;
+  content: "";
   left: 10px;
-}
-
-.control-list__control--radio::before {
-  position: absolute;
-  content: "";
-  width: 35px;
-  height: 35px;
-  border: 2px solid #e5e5e5;
-  border-radius: 50%;
-  left: 0;
-  transform: translateY(-5px);
-}
-
-.control-list__radio[type="radio"]:checked + .control-list__control--radio::after {
-  position: absolute;
-  content: "";
-  left: 12px;
   width: 15px;
   height: 15px;
   background-color: #d22856;

@@ -1,8 +1,42 @@
 .header-main {
-  background-color: rgba(29, 38, 49, 1);
-  background-image: url("../img/header/back-mobile.png");
+  margin: 0 auto;
+  width: 100%;
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  object-fit: contain;
+  background-position-y: 200px, top;
+  background-position-x: center;
+  background-color: #283645;
+  background-image: url("../img/phone-hand.png"), url("../img/header/back-mobile.png");
+  background-size: 320px 286px, 100%;
+  min-height: 462px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/phone-hand@tablet.png"), url("../img/header/back-tablet.png");
+    min-height: 729px;
+    background-position: bottom;
+    background-size: 660px 545px, 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/phone-hand@desktop.png"), url("../img/header/back-desktop.png");
+    min-height: 853px;
+    background-position: bottom;
+    background-size: 1050px 645px, 100%;
+  }
+}
+
+.header-main__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 66px;
+  grid-column: 2/3;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 110px;
+  }
 }
