@@ -9,11 +9,24 @@
   background-size: 320px 286px, 100%;
   min-height: 462px;
 
+  &--inner--catalog {
+    background-image: url("../img/header/back-mobile.png");
+    background-position: top;
+    background-size: 100%;
+    min-height: 237px;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/phone-hand@tablet.png"), url("../img/header/back-tablet.png");
     min-height: 729px;
     background-position: bottom;
     background-size: 660px 545px, 100%;
+
+    &--inner--catalog {
+      background-image: url("../img/header/back-tablet.png");
+      background-size: 100%;
+      min-height: 440px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -21,6 +34,12 @@
     min-height: 853px;
     background-position: bottom;
     background-size: 1050px 645px, 100%;
+
+    &--inner--catalog {
+      background-image: url("../img/header/back-desktop.png");
+      background-size: 100%;
+      min-height: 504px;
+    }
   }
 }
 
