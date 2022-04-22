@@ -186,11 +186,16 @@
           <p class="intro__promo">Затмите их всех!</p>
           <p class="intro__promo">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <form class="upload__form form-upload" action="https://echo.htmlacademy.ru" method="post">
-          <div class="wrapper">
+      </div>
+
+      <form class="upload__form form-upload" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-upload__container container">
+          <div class="form-upload__frame">
             <input class="form-upload__input" type="file" name="load-file" id="load-file">
             <img class="form-upload__image" src="img/photo-7.jpg" width="280" height="374"
               alt="Фотография зимней дороги.">
+          </div>
+          <div class="form-upload__wrapper">
             <div class="form-upload__tools tools-list">
               <button class="tools-list__item tools-list__item--active" type="button">
                 <svg class="tools-list__icon" width="44" height="44" viewBox="0 0 44 44" fill="none">
@@ -225,14 +230,22 @@
                 </svg>
               </button>
             </div>
-          </div>
-          <div class="form-upload__scale scale">
-            <div class="scale__control"></div>
+            <div class="form-upload__tools scale-list">
+              <div class="form-upload__scale scale">
+                <div class="scale__control"></div>
+              </div>
+              <div class="form-upload__scale scale">
+                <div class="scale__control"></div>
+              </div>
+              <div class="form-upload__scale scale">
+                <div class="scale__control"></div>
+              </div>
+            </div>
           </div>
           <button class="form-upload__button button button--acept" type="submit">Запостить</button>
           <button class="form-upload__button button button--cancel" type="reset">Отмена</button>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="main-footer">

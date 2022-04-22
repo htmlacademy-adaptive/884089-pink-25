@@ -1,3 +1,24 @@
-.form-upload {
-  background-color: #f2f2f2;
+.form-upload__frame {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+.form-upload__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-upload__wrapper {
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2/-1;
+  }
 }
