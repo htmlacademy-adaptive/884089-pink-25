@@ -2,7 +2,8 @@
   margin: 0 auto;
   width: 100%;
   background-repeat: no-repeat;
-  background-position-y: 176px, top;
+  background-position-y: 200px, top;
+  background-position-x: center;
   background-color: #283645;
   background-image: url("../img/phone-hand.png"), url("../img/header/back-mobile.png");
   background-size: 320px 286px, 100%;
@@ -27,19 +28,15 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 280px;
+  width: 100%;
   min-height: 66px;
-  margin: 0 auto;
+  grid-column: 2/3;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
     min-height: 110px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
-    display: flex;
-    align-items: center;
     min-height: 110px;
   }
 }
