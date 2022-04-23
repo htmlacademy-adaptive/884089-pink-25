@@ -18,7 +18,7 @@
           <picture>
             <source srcset="img/logo/logotype-white-desktop.svg" media="(min-width: 1200px)">
             <source srcset="img/logo/logotype-white-tablet.svg" media="(min-width: 660px)">
-            <img src="img/logo/pink.svg" alt="Логотип Pink.">
+            <img class="navigation__logo logo" src="img/logo/pink.svg" alt="Логотип Pink.">
           </picture>
         </a>
         <ul class="navigation__list navigation__list--open">
@@ -57,8 +57,12 @@
 
       <div class="photogallery__list photo-list">
         <article class="photo-list__item photo-list__item--size-xl">
-          <img class="photogallery__image" src="img/panorama.jpg" width="320" height="137"
-            alt="Панорама с моста над пропастью.">
+          <picture>
+            <source srcset="img/panorama-desktop.jpg" width="1200" height="506" media="(min-width: 1200px)">
+            <source srcset="img/panorama-tablet.jpg" width="660" height="509" media="(min-width: 660px)">
+            <img class="photogallery__image" src="img/panorama-tablet.jpg" width="320" height="137"
+              alt="Панорама с моста над пропастью.">
+          </picture>
           <div class="photo-list__wrapper container">
             <p class="photo-list__writers"><cite class="photo-list__author">Анна</cite> (<time class="photo-list__list"
                 datetime="2011-11-18T15:00-08:00">5 минут назад</time>)</p>
