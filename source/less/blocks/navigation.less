@@ -36,10 +36,13 @@
 //   align-self: center;
 // }
 
-// .navigation__item {
-//   @media (min-width: 320px) {
-//     display: none;
-//   }
+.navigation__item {
+  padding-right: 43px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
 
 //   @media (min-width: @tablet-width) {
 //     display: none;
@@ -58,7 +61,8 @@
   .font(400, 18px, 42px, #ffffff);
   text-decoration: none;
   text-align: center;
-  padding: 43px;
+  padding-top: 43px;
+  padding-bottom: 43px;
 }
 
 .navigation__link:hover {
