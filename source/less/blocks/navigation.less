@@ -18,27 +18,37 @@
   margin: 0;
   list-style-type: none;
   margin-inline-start: auto;
-  display: flex;
   align-items: center;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 // .navigation__toggle {
 //   align-self: center;
 // }
 
-.navigation__item {
-  @media (min-width: 320px) {
-    display: none;
-  }
+// .navigation__item {
+//   @media (min-width: 320px) {
+//     display: none;
+//   }
 
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
+//   @media (min-width: @tablet-width) {
+//     display: none;
+//   }
 
-  @media (min-width: @desktop-width) {
-    display: block;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     display: block;
+//   }
+// }
 
 // .navigation__item:not(:last-of-type) {
 //   margin-inline-end: 50px;
