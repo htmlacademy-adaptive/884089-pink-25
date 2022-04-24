@@ -21,8 +21,6 @@
 }
 
 .table-cost__item {
-  display: flex;
-
   @media (min-width: @tablet-width) {
     display: block;
   }
@@ -42,7 +40,7 @@
     // transform: translateX(-260px);
 
     @media (min-width: @tablet-width) {
-      margin: 0;
+      // margin: 0;
       background-color: #ffffff;
       // transform: translateX(0);
     }
@@ -72,7 +70,7 @@
     // transform: translateX(-260px);
 
     @media (min-width: @tablet-width) {
-      margin: 0;
+      // margin: 0;
       // transform: translateX(0);
     }
   }
@@ -88,8 +86,16 @@
 
 .table-cost__title--hidden {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+  }
 }
 
 .table-cost__cell--hidden {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+  }
 }

@@ -8,9 +8,18 @@
   overflow: hidden;
 }
 
+.tariff__wrapper {
+  padding: 0 20px;
+}
+
 .tariff__slides {
   width: 300%;
-  transform: translateX(-27%);
+  transform: translateX(-33.3%);
+
+  @media (min-width: @tablet-width) {
+    transform: translateX(0);
+    width: 100%;
+  }
 }
 
 .tariff__toggles {
