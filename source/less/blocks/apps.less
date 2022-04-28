@@ -1,6 +1,24 @@
+.apps {
+  .wrapper {
+    padding-top: 28px;
+    padding-bottom: 38px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 39px;
+      padding-bottom: 118px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 51px;
+      background-position: 130px;
+    }
+  }
+}
+
 .apps__info {
   .font(300, 18px, 24px, #ffffff);
   text-align: center;
+  margin-bottom: 0;
 }
 
 .header-main__apps {
@@ -20,6 +38,7 @@
 .apps__intro {
   .font(300, 24px, 29px, #ffffff);
   text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     .font(300, 50px, 68px, #ffffff);
@@ -38,6 +57,16 @@
 
 .apps__container-intro {
   min-height: 396px;
+  padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 127px;
+    padding-top: 102px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 114px;
+  }
 }
 
 .apps__container {
