@@ -1,7 +1,6 @@
 .table-cost {
   border-collapse: collapse;
   width: 100%;
-  // transform: translateX(-21%);
 
   @media (min-width: @tablet-width) {
     transform: translateX(0);
@@ -37,12 +36,13 @@
   }
 
   &:first-of-type {
-    // transform: translateX(-260px);
-
     @media (min-width: @tablet-width) {
-      // margin: 0;
       background-color: #ffffff;
-      // transform: translateX(0);
+    }
+
+    @media (min-width: @desktop-width) {
+      background-color: #f2f2f2;
+      border-color: #f2f2f2;
     }
   }
 
@@ -64,15 +64,6 @@
     background-image: url("../img/table/yes.png");
     background-repeat: no-repeat;
     background-position: right center;
-  }
-
-  &:first-of-type {
-    // transform: translateX(-260px);
-
-    @media (min-width: @tablet-width) {
-      // margin: 0;
-      // transform: translateX(0);
-    }
   }
 
   @media (min-width: @tablet-width) {
