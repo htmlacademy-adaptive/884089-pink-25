@@ -28,9 +28,7 @@
 .table-cost__title {
   background-color: #283645;
   .font(700, 16px, 30px, #ffffff);
-  border: 2px solid #e5e5e5;
   min-width: 276px;
-  position: relative;
   overflow: hidden;
 
   .table-cost__sum {
@@ -40,7 +38,7 @@
   &:first-of-type {
     @media (min-width: @tablet-width) {
       background-color: transparent;
-      border-color: transparent;
+      border-left: 4px solid transparent;
     }
   }
 
@@ -53,32 +51,55 @@
   }
 }
 
-.table-cost__title--active::before {
-  position: absolute;
-  content: url("../img/hits.svg");
-  left: 0;
-  top: 0;
+.table-cost__title--active {
+  position: relative;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
 
-  @media (min-width: @tablet-width) {
-    left: -5px;
-    top: -10px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 0;
+  &::before {
+    position: absolute;
+    content: url("../img/hits.svg");
     left: 0;
+    top: 0;
+
+    @media (min-width: @tablet-width) {
+      left: -5px;
+      top: -10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+      left: 0;
+    }
   }
 }
 
 .table-cost__cell {
   .font(400, 14px, 30px, @main-color);
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
   min-width: 276px;
 
   &--primary {
     background-image: url("../img/table/yes.png");
     background-repeat: no-repeat;
     background-position: right center;
+
+    @media (min-width: @tablet-width) {
+      color: transparent;
+      background-position: center;
+    }
+  }
+
+  &--secondary {
+    background-image: url("../img/table/no.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @media (min-width: @tablet-width) {
+      color: transparent;
+      background-position: center;
+    }
   }
 
   @media (min-width: @tablet-width) {
