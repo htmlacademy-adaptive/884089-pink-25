@@ -898,7 +898,7 @@
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
   display: block;
-  padding: 20px;
+  padding: 14px 16px;
 }
 .socials-list__link:hover {
   border-color: #283645;
