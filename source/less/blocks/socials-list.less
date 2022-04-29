@@ -20,6 +20,7 @@
   border-radius: 50%;
   display: block;
   padding: 14px 16px;
+  fill: @second-color;
 
   &:hover {
     border-color: @main-color;
@@ -27,6 +28,6 @@
 
   &:active {
     border-color: fade(@main-color, 10%);
-    opacity: 0.1;
+    fill: fade(@second-color, 10%);
   }
 }
