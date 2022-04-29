@@ -663,8 +663,8 @@
   line-height: 30px;
   font-family: "Opens Sans", sans-serif;
   color: #ffffff;
-  border: 2px solid #e5e5e5;
   min-width: 276px;
+  overflow: hidden;
 }
 .table-cost__title .table-cost__sum {
   font-weight: 300;
@@ -675,13 +675,8 @@
 }
 @media (min-width: 660px) {
   .table-cost__title:first-of-type {
-    background-color: #ffffff;
-  }
-}
-@media (min-width: 1200px) {
-  .table-cost__title:first-of-type {
     background-color: transparent;
-    border-color: transparent;
+    border-left: 4px solid transparent;
   }
 }
 @media (min-width: 660px) {
@@ -694,6 +689,29 @@
     min-width: 233px;
   }
 }
+.table-cost__title--active {
+  position: relative;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+.table-cost__title--active::before {
+  position: absolute;
+  content: url("../img/hits.svg");
+  left: 0;
+  top: 0;
+}
+@media (min-width: 660px) {
+  .table-cost__title--active::before {
+    left: -5px;
+    top: -10px;
+  }
+}
+@media (min-width: 1200px) {
+  .table-cost__title--active::before {
+    top: 0;
+    left: 0;
+  }
+}
 .table-cost__cell {
   font-weight: 400;
   font-size: 14px;
@@ -701,12 +719,30 @@
   font-family: "Opens Sans", sans-serif;
   color: #283645;
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
   min-width: 276px;
 }
 .table-cost__cell--primary {
   background-image: url("../img/table/yes.png");
   background-repeat: no-repeat;
   background-position: right center;
+}
+@media (min-width: 660px) {
+  .table-cost__cell--primary {
+    color: transparent;
+    background-position: center;
+  }
+}
+.table-cost__cell--secondary {
+  background-image: url("../img/table/no.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+@media (min-width: 660px) {
+  .table-cost__cell--secondary {
+    color: transparent;
+    background-position: center;
+  }
 }
 @media (min-width: 660px) {
   .table-cost__cell {
@@ -1624,6 +1660,30 @@
 @media (min-width: 1200px) {
   .container {
     width: 940px;
+  }
+}
+.map {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.map::before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  height: 33px;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+          clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+@media (min-width: 660px) {
+  .map::before {
+    height: 50px;
+  }
+}
+@media (min-width: 660px) {
+  .map::before {
+    height: 120px;
   }
 }
 .map__frame {
