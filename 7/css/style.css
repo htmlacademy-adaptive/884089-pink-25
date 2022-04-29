@@ -473,7 +473,6 @@
 @media (min-width: 660px) and (max-width: 1199px) {
   .preference__item {
     grid-column: 2;
-    margin-bottom: 43px;
   }
 }
 @media (min-width: 1200px) {
@@ -1531,6 +1530,7 @@
 @media (min-width: 660px) {
   .advantages-item {
     display: block;
+    background-color: #ffffff;
   }
 }
 @media (min-width: 1200px) {
