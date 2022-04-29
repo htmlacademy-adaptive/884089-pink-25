@@ -30,6 +30,8 @@
   .font(700, 16px, 30px, #ffffff);
   border: 2px solid #e5e5e5;
   min-width: 276px;
+  position: relative;
+  overflow: hidden;
 
   .table-cost__sum {
     .font(300, 18px, 30px, #ffffff);
@@ -48,6 +50,23 @@
 
   @media (min-width: @desktop-width) {
     min-width: 233px;
+  }
+}
+
+.table-cost__title--active::before {
+  position: absolute;
+  content: url("../img/hits.svg");
+  left: 0;
+  top: 0;
+
+  @media (min-width: @tablet-width) {
+    left: -5px;
+    top: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+    left: 0;
   }
 }
 
