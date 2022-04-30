@@ -1789,4 +1789,39 @@
 .academy-logo:active {
   fill: rgba(40, 54, 69, 0.3);
 }
+@media (min-width: 660px) {
+  .logo-link__small {
+    display: none;
+  }
+}
+.logo-link__middle {
+  display: none;
+}
+@media (min-width: 660px) {
+  .logo-link__middle {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .logo-link__middle {
+    display: none;
+  }
+}
+.logo-link__xl {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .logo-link__xl {
+    display: block;
+  }
+}
+.logo-white {
+  fill: #ffffff;
+}
+.logo-white:hover {
+  fill: #d22856;
+}
+.logo-white:active {
+  fill: rgba(255, 255, 255, 0.3);
+}
 /*# sourceMappingURL=style.css.map */
