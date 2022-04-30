@@ -230,18 +230,18 @@
     bottom: 35px;
   }
 }
-.apps .wrapper {
+.apps__wrapper {
   padding-top: 28px;
   padding-bottom: 38px;
 }
 @media (min-width: 660px) {
-  .apps .wrapper {
+  .apps__wrapper {
     padding-top: 39px;
     padding-bottom: 118px;
   }
 }
 @media (min-width: 1200px) {
-  .apps .wrapper {
+  .apps__wrapper {
     padding-top: 51px;
     background-position: 130px;
   }
