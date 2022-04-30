@@ -2,12 +2,14 @@
   margin: 0 auto;
   width: 100%;
   background-repeat: no-repeat;
-  background-position-y: 200px, top;
+  background-position-y: 200px, 28px;
   background-position-x: center;
   background-color: #283645;
   background-image: url("../img/phone-hand.png"), url("../img/header/back-mobile.png");
   background-size: 320px 286px, 100%;
-  min-height: 462px;
+  // background-image: url("../img/header/mobil-format.png");
+  // background-position: bottom;
+  // background-size: cover;
 
   &--inner--catalog {
     background-image: url("../img/header/back-mobile.png");
@@ -20,7 +22,7 @@
     background-image: url("../img/phone-hand@tablet.png"), url("../img/header/back-tablet.png");
     min-height: 729px;
     background-position: bottom;
-    background-size: 660px 545px, 100%;
+    background-size: 660px 545px, cover;
 
     &--inner--catalog {
       background-image: url("../img/header/back-tablet.png");
@@ -33,7 +35,7 @@
     background-image: url("../img/phone-hand@desktop.png"), url("../img/header/back-desktop.png");
     min-height: 853px;
     background-position: bottom;
-    background-size: 1050px 645px, 100%;
+    background-size: 1050px 645px, cover;
 
     &--inner--catalog {
       background-image: url("../img/header/back-desktop.png");
@@ -44,7 +46,6 @@
 }
 
 .header-main__container {
-  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -57,5 +58,50 @@
 
   @media (min-width: @desktop-width) {
     min-height: 110px;
+  }
+}
+
+// класс для навигации меню без js
+.header-main--nojs {
+  @media (max-width: 1199px) {
+    .navigation {
+      background-color: @main-color;
+      grid-template-columns: 1fr;
+    }
+
+    .header-main__container {
+      grid-column: 1;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    .navigation__list {
+      display: flex;
+      flex-direction: column;
+      background-color: @main-color;
+      position: relative;
+      width: 100%;
+      box-shadow: 0 -1px 0 #000000;
+
+
+      @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: column;
+        background-color: @main-color;
+        position: absolute;
+        width: 100%;
+        top: 110px;
+        left: 0;
+        box-shadow: 0 -1px 0 #000000;
+      }
+    }
+
+    .toggle {
+      display: none;
+    }
+
+    .apps__container-intro {
+      min-height: 84px;
+    }
   }
 }

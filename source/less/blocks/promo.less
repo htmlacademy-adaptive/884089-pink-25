@@ -1,6 +1,27 @@
+.promo {
+  padding-top: 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 77px;
+  }
+}
+
 .promo__item {
   .font(300, 24px, 29px, @main-color);
   text-align: center;
+  margin: 0;
+
+  & br {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     .font(300, 40px, 54px, @main-color);
@@ -9,4 +30,16 @@
   @media (min-width: @desktop-width) {
     .font(300, 50px, 68px, @main-color);
   }
+}
+
+.promo__item:first-of-type {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.promo__item--second:first-of-type {
+  margin-bottom: 0;
 }

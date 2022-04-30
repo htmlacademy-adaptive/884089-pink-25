@@ -1,0 +1,33 @@
+.map {
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
+    height: 33px;
+    width: 100%;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+
+    @media (min-width: @tablet-width) {
+      height: 50px;
+    }
+
+    @media (min-width: @tablet-width) {
+      height: 120px;
+    }
+  }
+}
+
+.map__frame {
+  min-height: 200px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 502px;
+  }
+}

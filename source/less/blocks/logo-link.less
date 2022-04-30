@@ -1,0 +1,37 @@
+.logo-link__small {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.logo-link__middle {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo-link__xl {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo-white {
+  fill: #ffffff;
+
+  &:hover {
+    fill: @second-color;
+  }
+
+  &:active {
+    fill: fade(#ffffff, 30%);
+  }
+}

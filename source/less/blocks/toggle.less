@@ -1,6 +1,6 @@
 .toggle {
   position: absolute;
-  right: 0;
+  right: 20px;
   .button-menu();
 
   @media (min-width: @desktop-width) {
@@ -8,27 +8,30 @@
   }
 }
 
-// .toggle--close {
-//   position: absolute;
-//   right: 43px;
-//   top: 23px;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0;
-//   padding: 0;
+.toggle--close {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 23px;
+  height: 2px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transform: rotate(-45deg);
 
-//   &::before {
-//     .buttom-close();
-//     content: "";
-//     position: absolute;
-//     transform: rotate(45deg);
-//   }
+  &::before {
+    position: absolute;
+    border: none;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 23px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(90deg);
+  }
 
-//   &::after {
-//     .buttom-close();
-//     content: "";
-//     position: absolute;
-//     transform: rotate(-45deg);
-//   }
-// }
+  @media (min-width: @tablet-width) {
+    top: 60px;
+  }
+}

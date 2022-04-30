@@ -4,4 +4,30 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
+  min-width: 180px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.socials-list__link {
+  border: 3px solid fade(@main-color, 10%);
+  border-radius: 50%;
+  display: block;
+  padding: 14px 16px;
+  fill: @second-color;
+
+  &:hover {
+    border-color: @main-color;
+  }
+
+  &:active {
+    border-color: fade(@main-color, 10%);
+    fill: fade(@second-color, 10%);
+  }
 }

@@ -4,14 +4,27 @@
 }
 
 .contacts__wrapper {
+  padding-top: 41px;
+  padding-bottom: 45px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  @media (min-width: @tablet-width) {
     justify-content: space-around;
+    padding-top: 51px;
+    padding-bottom: 30px;
+  }
+}
+
+.contacts__item:first-of-type {
+  margin-bottom: 31px;
+}
+
+.contacts__item:nth-last-of-type(2) {
+  margin-bottom: 35px;
+
+  @media (min-width: @desktop-width) {
+    order: 3;
   }
 }
 
