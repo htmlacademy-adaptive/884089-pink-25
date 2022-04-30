@@ -5,17 +5,13 @@
   z-index: 2;
 
   &--open {
-    background-color: #283645;
+    background-color: @main-color;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: auto 940px auto;
     background-color: fade(#000000, 30%);
   }
-
-  // &--open {
-  //   background-color: @main-color;
-  // }
 }
 
 .navigation__list {
@@ -39,7 +35,7 @@
 .navigation__list--open {
   display: flex;
   flex-direction: column;
-  background-color: #283645;
+  background-color: @main-color;
   position: absolute;
   width: 100%;
   top: 66px;
@@ -50,7 +46,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    background-color: #283645;
+    background-color: @main-color;
     position: absolute;
     width: 100%;
     top: 110px;
