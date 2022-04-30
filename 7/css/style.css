@@ -41,7 +41,6 @@
   background-color: #283645;
   background-image: url("../img/phone-hand.png"), url("../img/header/back-mobile.png");
   background-size: 320px 286px, 100%;
-  min-height: 462px;
 }
 .header-main--inner--catalog {
   background-image: url("../img/header/back-mobile.png");
@@ -90,6 +89,43 @@
 @media (min-width: 1200px) {
   .header-main__container {
     min-height: 110px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-main--nojs .navigation {
+    background-color: #283645;
+    grid-template-columns: 1fr;
+  }
+  .header-main--nojs .header-main__container {
+    grid-column: 1;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .header-main--nojs .navigation__list {
+    display: flex;
+    flex-direction: column;
+    background-color: #283645;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -1px 0 #000000;
+  }
+  .header-main--nojs .toggle {
+    display: none;
+  }
+  .header-main--nojs .apps__container-intro {
+    min-height: 84px;
+  }
+}
+@media (max-width: 1199px) and (min-width: 660px) {
+  .header-main--nojs .navigation__list {
+    display: flex;
+    flex-direction: column;
+    background-color: #283645;
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    left: 0;
+    box-shadow: 0 -1px 0 #000000;
   }
 }
 .main-title__text {
@@ -233,9 +269,12 @@
 .apps__wrapper {
   padding-top: 28px;
   padding-bottom: 38px;
+  background-color: #283645;
 }
 @media (min-width: 660px) {
   .apps__wrapper {
+    background-color: transparent;
+    grid-column: 2;
     padding-top: 39px;
     padding-bottom: 118px;
   }
@@ -283,15 +322,6 @@
     line-height: 68px;
     font-family: "Opens Sans", sans-serif;
     color: #ffffff;
-  }
-}
-.wrapper {
-  background-color: #283645;
-}
-@media (min-width: 660px) {
-  .wrapper {
-    background-color: transparent;
-    grid-column: 2;
   }
 }
 .apps__container-intro {
@@ -1715,7 +1745,6 @@
   }
 }
 .map {
-  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
