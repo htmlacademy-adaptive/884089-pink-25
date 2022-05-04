@@ -3,6 +3,11 @@ let navList = document.querySelector('.nav-js');
 let menu = document.querySelector('.toggle-js');
 let open = document.querySelector('.toggle');
 let close = document.querySelector('.toggle--close');
+let header = document.querySelector('.header-main');
+
+if (header.classList.contains('header-main--nojs')) {
+  header.classList.remove('header-main--nojs');
+}
 
 menu.onclick = function(evt) {
   evt.preventDefault();
