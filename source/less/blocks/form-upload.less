@@ -1,5 +1,7 @@
 .form-upload {
   background-color: #f2f2f2;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .form-upload__tools {
@@ -13,6 +15,10 @@
   flex-direction: column;
   grid-row: 1/4;
   grid-column: 1/2;
+
+  @media (min-width) {
+    justify-self: center;
+  }
 }
 
 .form-upload__container {
@@ -23,6 +29,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
 }
 
 .form-upload__wrapper {
@@ -30,6 +41,10 @@
 
   @media (min-width: @tablet-width) {
     grid-column: 2/-1;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 132px;
   }
 }
 
