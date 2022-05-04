@@ -1,8 +1,30 @@
 .intro__promo {
   .font(400, 14px, 30px, @main-color);
   text-align: center;
+  margin-top: 54px;
+  margin-bottom: 60px;
+
+  &:first-of-type {
+    margin-bottom: 0;
+  }
+
+  &:last-of-type {
+    margin-top: 0;
+  }
 
   @media (min-width: @tablet-width) {
     .font(400, 18px, 30px, @main-color);
+    margin-top: 100px;
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 93px;
+    margin-bottom: 97px;
+  }
+
+  &--secondary {
+    margin-top: 49px;
+    margin-bottom: 52px;
   }
 }
