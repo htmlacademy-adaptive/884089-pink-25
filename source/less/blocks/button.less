@@ -6,14 +6,6 @@
   width: 100%;
   min-height: 55px;
 
-  @media (min-width: @tablet-width) {
-    width: 260px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 183px;
-  }
-
   &:active {
     color: fade(#ffffff, 30%);
   }
@@ -38,7 +30,12 @@
     border-color: @second-color;
     margin-bottom: 33px;
 
+    @media (min-width: @tablet-width) {
+      width: 260px;
+    }
+
     @media (min-width: @desktop-width) {
+      width: 183px;
       margin-bottom: 0;
       margin-right: 44px;
     }
@@ -48,6 +45,14 @@
     opacity: 0.1;
     border: 3px solid @main-color;
     color: @main-color;
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 183px;
+    }
   }
 }
 

@@ -27,4 +27,34 @@
     margin-top: 49px;
     margin-bottom: 52px;
   }
+
+  &--nohidden:first-of-type {
+    margin-bottom: 55px;
+
+    & br {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+
+      & br {
+        display: block;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

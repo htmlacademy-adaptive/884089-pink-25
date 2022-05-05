@@ -61,8 +61,8 @@
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Фотографии</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Конкурс</a>
+          <li class="navigation__item navigation__item--curent">
+            <a class="navigation__link navigation__link--current" href="form.html">Конкурс</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="https://htmlacademy.ru/">HTML academy</a>
@@ -84,9 +84,12 @@
       <h2 class="visually-hidden">Форма заявки на участие в конкурсе.</h2>
       <div class="container">
         <div class="questionnaire__intro intro">
-          <p class="intro__promo">Поделитесь своей историей и получите
-            шанс выиграть ценный приз — 1000
-            миль на вашу бонусную карту!</p>
+          <p class="intro__promo intro__promo--nohidden">
+            Поделитесь своей историей и получите шанс выиграть<br> ценный приз — 1000 миль на вашу бонусную карту!
+          </p>
+          <p class="intro__promo intro__promo--hidden">
+            Пожалуйста, заполните форму ниже:
+          </p>
         </div>
       </div>
       <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="post">
@@ -101,7 +104,7 @@
             <label class="person-data__name" for="name">Имя:</label>
             <input class="person-data__input" type="text" name="name" id="name" value="Введите ваше имя *">
           </p>
-          <p class="form__person-data person-data">
+          <p class="form__person-data person-data person-data--nomargin">
             <label class="person-data__name" for="second-name">Отчество:</label>
             <input class="person-data__input" type="text" name="second-name" id="second-name"
               value="Ну и отчество тоже">
@@ -110,7 +113,8 @@
         </fieldset>
         <fieldset class="form__group form__group--second">
 
-          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form__title form__title--second">Ваши безбашенные достижения в путешествии</legend>
+          <p class="form__title--hiden">Ваши безбашенные<br> достижения в путешествии</p>
           <ul class="form__list control-list control-list--box">
             <li class="control-list__item">
               <label class="control-list__control" for="selfi">
@@ -157,22 +161,23 @@
           </ul>
 
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--third">
 
-          <legend class="form__title visually-hidden">Контактная информация</legend>
-          <p class="form__person-data person-data">
+          <legend class="form__title form__title--third">Контактная информация</legend>
+          <p class="form__person-data person-data person-data--third">
             <label class="person-data__name" for="phone">Номер телефона</label>
-            <input class="person-data__input" type="tel" name="phone" id="phone" value="Номер, пожалуйста">
+            <input class="person-data__input person-data__input--third--tel" type="tel" name="phone" id="phone" value="Номер, пожалуйста">
           </p>
-          <p class="form__person-data person-data">
+          <p class="form__person-data person-data person-data--third">
             <label class="person-data__name" for="mail">Адрес почты</label>
-            <input class="person-data__input" type="email" name="mail" id="mail" value="Введите почту *">
+            <input class="person-data__input person-data__input--third--mail" type="email" name="mail" id="mail" value="Введите почту *">
           </p>
 
         </fieldset>
-        <fieldset class="form__group form__group--second">
+        <fieldset class="form__group form__group--second form__group--second--radio">
 
-          <legend class="form__title">С каким приложением путешествовали?</legend>
+          <legend class="form__title form__title--second">С каким приложением путешествовали?</legend>
+          <p class="form__title--hiden">С каким приложением<br> путешествовали?</p>
           <ul class="form__list control-list">
             <li class="control-list__item">
               <label class="control-list__control" for="ios">
@@ -202,11 +207,11 @@
 
         </fieldset>
 
-        <p class="form__group">
-          <label class="form__title" for="rewiews">Опишите свои эмоции</label>
+        <fieldset class="form__group form__group--four">
+          <legend class="form__title" for="rewiews">Опишите свои эмоции</legend>
           <textarea class="form__textarea" name="rewiews" id="rewiews" cols="20"
             rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </p>
+        </fieldset>
         <div class="form__wrapper">
           <button class="form__button button-form" type="submit">Отправить форму</button>
           <p class="form__info">
