@@ -28,12 +28,31 @@
   &--acept {
     color: @second-color;
     border-color: @second-color;
+    margin-bottom: 33px;
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 183px;
+      margin-bottom: 0;
+      margin-right: 44px;
+    }
   }
 
   &--cancel {
     opacity: 0.1;
     border: 3px solid @main-color;
     color: @main-color;
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 183px;
+    }
   }
 }
 

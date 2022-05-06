@@ -5,12 +5,33 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: center;
+
+    &--third {
+      flex-wrap: wrap-reverse;
+      max-width: 496px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--nomargin {
+      margin-bottom: 0;
+    }
+
+    &--third {
+      max-width: 371px;
+      width: 100%;
+    }
   }
 }
 
 .person-data__name {
   .font(400, 14px, 30px, @second-color);
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .person-data__input {
@@ -27,5 +48,34 @@
 
   &:active {
     border-color: @second-color;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 21px 0 21px 18px;
+
+    &--third--tel {
+      background-image: url("../img/form/phone.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+    }
+
+    &--third--mail {
+      background-image: url("../img/form/mail.png");
+      background-repeat: no-repeat;
+      background-position: 101% center;
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 100%;
+
+    // &--third--tel,
+    // &--third--mail {
+    //   width: auto;
+    //   min-width: 371px;
+    // }
   }
 }
