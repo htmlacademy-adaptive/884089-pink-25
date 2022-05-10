@@ -1071,11 +1071,21 @@
 }
 .photo-list__item--size-xl::after {
   position: absolute;
-  content: url("../img/day-foto.png");
+  content: "Панорама дня";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "Opens Sans", sans-serif;
+  color: #ffffff;
   width: 140px;
   height: 36px;
+  text-transform: uppercase;
+  background-color: #d22856;
   left: 50%;
   top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 7px;
 }
 @media (min-width: 660px) {
   .photo-list__item--size-xl::after {
@@ -1555,6 +1565,7 @@
   font-family: "Opens Sans", sans-serif;
   color: #283645;
   padding: 22px;
+  resize: none;
 }
 .form__info {
   font-weight: 400;
@@ -1570,9 +1581,6 @@
   line-height: 30px;
   font-family: "Opens Sans", sans-serif;
   color: #d22856;
-}
-.form__textarea {
-  resize: none;
 }
 .form-upload {
   background-color: #f2f2f2;
@@ -2258,5 +2266,8 @@
 }
 .logo-white:active {
   fill: rgba(255, 255, 255, 0.3);
+}
+.page__body {
+  min-width: 320px;
 }
 /*# sourceMappingURL=style.css.map */
