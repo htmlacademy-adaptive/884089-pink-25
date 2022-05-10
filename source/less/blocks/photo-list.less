@@ -18,11 +18,17 @@
 
     &::after {
       position: absolute;
-      content: url("../img/day-foto.png");
+      content: "Панорама дня";
+      .font(700, 12px, 24px, #ffffff);
       width: 140px;
       height: 36px;
+      text-transform: uppercase;
+      background-color: @second-color;
       left: 50%;
       top: 0;
+      box-sizing: border-box;
+      text-align: center;
+      padding-top: 7px;
 
       @media (min-width: @tablet-width) {
         left: 76%;
