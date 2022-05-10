@@ -5,44 +5,65 @@
   background-position-y: 200px, 28px;
   background-position-x: center;
   background-color: #283645;
-  background-image: url("../img/phone-hand.png"), url("../img/header/back-mobile.png");
+  background-image: url("../img/header/phone-hand.png"), url("../img/header/back-mobile.png");
   background-size: 320px 286px, 100%;
-  // background-image: url("../img/header/mobil-format.png");
-  // background-position: bottom;
-  // background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header/phone-hand@2x.png"), url("../img/header/back-mobile@2x.png");
+  }
 
   &--inner--catalog {
     background-image: url("../img/header/back-mobile.png");
     background-position: top;
     background-size: 100%;
     min-height: 237px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/back-mobile@2x.png");
+    }
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/phone-hand@tablet.png"), url("../img/header/back-tablet.png");
+    background-image: url("../img/header/phone-hand-tablet.png"), url("../img/header/back-tablet.png");
     min-height: 729px;
     background-position: bottom;
     background-size: 660px 545px, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/phone-hand-tablet@2x.png"), url("../img/header/back-tablet@2x.png");
+    }
 
     &--inner--catalog {
       background-image: url("../img/header/back-tablet.png");
       background-size: 100%;
       min-height: 440px;
       background-position: top;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/header/back-tablet@2x.png");
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/phone-hand@desktop.png"), url("../img/header/back-desktop.png");
+    background-image: url("../img/header/phone-hand-desktop.png"), url("../img/header/back-desktop.png");
     min-height: 853px;
     background-position: bottom;
     background-size: 1050px 645px, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/phone-hand-desktop@2x.png"), url("../img/header/back-desktop@2x.png");
+    }
 
     &--inner--catalog {
       background-image: url("../img/header/back-desktop.png");
       background-size: 100%;
       min-height: 394px;
       background-position: top;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/header/back-desktop@2x.png");
+      }
     }
   }
 }
