@@ -14,6 +14,40 @@
 }
 
 .footer-logo-link__pink {
+  fill: @second-color;
+
+  &:hover {
+    fill: @second-color;
+  }
+
+  &:active {
+    fill: fade(@second-color, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.footer-logo-link__dark {
+  fill: @main-color;
+
+  &:hover {
+    fill: @second-color;
+  }
+
+  &:active {
+    fill: fade(@main-color, 30%);
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
