@@ -2,6 +2,15 @@
   text-decoration: none;
   margin-bottom: 38px;
   gap: 11px;
+  fill: #283645;
+
+  &:hover {
+    fill: @second-color;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -14,49 +23,63 @@
 }
 
 .footer-logo-link__pink {
-  fill: @second-color;
-
-  &:hover {
-    fill: @second-color;
-  }
-
-  &:active {
-    fill: fade(@second-color, 30%);
+  &--hidden {
+    display: none;
   }
 
   @media (min-width: @desktop-width) {
     display: none;
-  }
 
-  &--hidden {
-    display: none;
-
-    @media (min-width: @desktop-width) {
+    &--hidden {
       display: block;
     }
   }
 }
 
-.footer-logo-link__dark {
-  fill: @main-color;
+// .footer-logo-link__pink {
+//   fill: @second-color;
 
-  &:hover {
-    fill: @second-color;
-  }
+//   &:hover {
+//     fill: @second-color;
+//   }
 
-  &:active {
-    fill: fade(@main-color, 30%);
-  }
+//   &:active {
+//     fill: fade(@second-color, 30%);
+//   }
 
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
+//   @media (min-width: @desktop-width) {
+//     display: none;
+//   }
 
-  &--hidden {
-    display: none;
+//   &--hidden {
+//     display: none;
 
-    @media (min-width: @desktop-width) {
-      display: block;
-    }
-  }
-}
+//     @media (min-width: @desktop-width) {
+//       display: block;
+//     }
+//   }
+// }
+
+// .footer-logo-link__dark {
+//   fill: @main-color;
+
+//   &:hover {
+//     fill: @second-color;
+//   }
+
+//   &:active {
+//     fill: fade(@main-color, 30%);
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     display: none;
+//   }
+
+//   &--hidden {
+//     display: none;
+
+//     @media (min-width: @desktop-width) {
+//       display: block;
+//     }
+//   }
+// }
