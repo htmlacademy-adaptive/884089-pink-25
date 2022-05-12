@@ -48,10 +48,18 @@
   }
 }
 
-.preference__item::before {
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .preference__item::before {
     content: url("../img/advantages/advantages-1.png");
     margin-bottom: -52px;
+  }
+
+  .preference__item--primary::before {
+    content: url("../img/advantages/advantages-2.png");
+  }
+
+  .preference__item--secondary::before {
+    content: url("../img/advantages/advatages-3.png");
   }
 }
 
