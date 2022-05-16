@@ -54,6 +54,8 @@
 
   @media (min-width: @tablet-width) {
     padding: 21px 0 21px 18px;
+    width: 100%;
+    max-width: 100%;
 
     &--third--tel {
       background-image: url("../img/form/phone.svg");
@@ -70,14 +72,12 @@
     }
   }
 
-  @media (min-width: @tablet-width) {
-    width: 100%;
-    max-width: 100%;
+  // @media (min-width: @tablet-width) {
+  //   width: 100%;
+  //   max-width: 100%;
+  // }
 
-    // &--third--tel,
-    // &--third--mail {
-    //   width: auto;
-    //   min-width: 371px;
-    // }
+  @media (min-width: @desktop-width) {
+    padding: 15px 0 14px 18px;
   }
 }
