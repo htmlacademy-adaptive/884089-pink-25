@@ -1,7 +1,97 @@
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  text-align: center;
+  padding-top: 44px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    margin: auto;
+    padding-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal__wrapper {
+  padding-bottom: 52px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background-color: #f2f2f2;
+  }
+}
+
 .modal__title {
   .font(700, 18px, 24px, #000000);
+  margin-top: 0;
+  margin-bottom: 37px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    .font(700, 30px, 40px, #000000);
+
+    & br {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & br {
+      display: none;
+    }
+  }
 }
 
 .modal__text {
   .font(400, 14px, 24px, @main-color);
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    .font(400, 18px, 24px, #000000);
+    margin-bottom: 40px;
+    margin-left: 55px;
+    margin-right: 55px;
+
+    & br {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-bottom: 68px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.modal--visibled {
+  display: block;
 }

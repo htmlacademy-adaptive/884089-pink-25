@@ -28,8 +28,12 @@
 .table-cost__title {
   background-color: #283645;
   .font(700, 16px, 30px, #ffffff);
-  min-width: 276px;
+  width: 276px;
   overflow: hidden;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 25px;
 
   .table-cost__sum {
     .font(300, 18px, 30px, #ffffff);
@@ -43,11 +47,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-width: 152px;
+    width: 152px;
+    padding-bottom: 6px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 233px;
+    width: 233px;
+    padding-bottom: 25px;
   }
 }
 
@@ -78,12 +84,16 @@
   .font(400, 14px, 30px, @main-color);
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
-  min-width: 276px;
+  width: 276px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  box-sizing: border-box;
 
   &--primary {
     background-image: url("../img/table/yes.png");
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: 95% center;
 
     @media (min-width: @tablet-width) {
       color: transparent;
@@ -94,7 +104,7 @@
   &--secondary {
     background-image: url("../img/table/no.png");
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: 95% center;
 
     @media (min-width: @tablet-width) {
       color: transparent;
@@ -103,11 +113,25 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-width: 152px;
+    width: 152px;
+    padding-top: 7px;
+    padding-bottom: 6px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 233px;
+    .font(400, 18px, 30px, @main-color);
+    width: 233px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-top: 14px;
+
+    &--primary {
+      color: transparent;
+    }
+
+    &--secondary {
+      color: transparent;
+    }
   }
 }
 
