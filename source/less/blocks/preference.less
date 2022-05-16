@@ -46,12 +46,18 @@
   @media (min-width: @tablet-width) and (max-width: 1199px) {
     grid-column: 2;
   }
+
+  @media (min-width: @desktop-width) {
+    & {
+      padding-bottom: 35px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .preference__item::before {
     content: url("../img/advantages/advantages-1.png");
-    margin-bottom: -52px;
+    margin-bottom: -85px;
   }
 
   .preference__item--primary::before {
