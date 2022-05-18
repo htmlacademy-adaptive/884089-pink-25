@@ -5,8 +5,8 @@ let failModal = document.querySelector('.modal--invalid');
 let form = document.querySelector('.form');
 let allOk = document.querySelector('.modal--success');
 let modal = document.querySelector('.modal');
-let modalOne = document.querySelector('.button--first--js');
-let modalTwo = document.querySelector('.button--second--js');
+let modalOne = document.querySelector('.modal__button-form--first--js');
+let modalTwo = document.querySelector('.modal__button-form--second--js');
 
 form.onsubmit = function(evt) {
   evt.preventDefault();
