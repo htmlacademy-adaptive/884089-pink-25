@@ -60,6 +60,12 @@
       border-color: @second-color;
     }
   }
+
+  &:focus {
+    .control-list__mark {
+      border-color: @main-color;
+    }
+  }
 }
 
 .control-list__check[type="checkbox"]:checked + .control-list__mark::before {
